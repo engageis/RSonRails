@@ -37,7 +37,7 @@ gem 'coffee-rails', '4.0.0'
 gem 'compass-rails'
 gem 'uglifier'
 gem 'turbolinks'
-#gem 'bootstrap-sass'
+gem 'bootstrap-sass'
 #gem 'zurb-foundation'
 #gem 'angular-rails'
 
