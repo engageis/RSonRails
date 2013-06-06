@@ -12,9 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-
-//= require rsonrails/rsonrails.js
-//= require init.js
 //= require_tree ./lib
 
