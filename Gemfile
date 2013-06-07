@@ -28,6 +28,8 @@ gem 'bootstrap-sass'
   #gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 #end
 
+gem 'newconference', path: '../newconference' # github: 'josemarluedke/newconference'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
