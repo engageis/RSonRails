@@ -1,14 +1,13 @@
 doctype html
 html
   head
-    title = page_title app_name: "rsonrails"
+    title = page_title app_name: "RS on Rails 2013"
     = stylesheet_link_tag "application"
     meta[charset="utf-8"]
     = yield(:meta_tags)
     = csrf_meta_tag
     = javascript_include_tag "application"
   body
-    = initjs_tag app_name: "Rsonrails"
     = render 'layouts/flash', flash: flash if flash.present?
     = render 'layouts/header'
     = yield
