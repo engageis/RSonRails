@@ -11,6 +11,11 @@ gem 'thin'
 # I18n
 gem 'rails-i18n'
 
+gem 'devise', '~> 3.0.0.rc'
+gem 'font-awesome-sass-rails' # rails_admin dependence
+gem 'rails_admin', github: 'sferik/rails_admin', branch: 'rails-4'
+gem 'cancan'
+
 # Frontend stuff
 gem 'jquery-rails'
 gem 'slim-rails'
