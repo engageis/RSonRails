@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree ./lib
-
+$(document).ready(function(){
+  $.backstretch($('header').attr('data-image-url'))
+})
