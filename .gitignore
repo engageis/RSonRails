@@ -13,3 +13,4 @@ capybara-*.html
 /spec/tmp/*
 **.orig
 config/database.yml
+public/uploads_*
