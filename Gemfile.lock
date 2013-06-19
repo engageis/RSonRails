@@ -28,7 +28,7 @@ PATH
       carrierwave (~> 0.8.0)
       foreigner
       pg
-      rails (~> 4.0.0.rc1)
+      rails (~> 4.0.0.rc2)
       rmagick
 
 GEM
