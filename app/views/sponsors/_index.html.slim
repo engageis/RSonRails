@@ -1,5 +1,20 @@
 .sponsors
   .container
     h3 PATROCÍNIO
+    - @sponsors.each_slice(4) do |group|
+      .collection
+        - for sponsor in group
+          = render 'sponsors/sponsor', { sponsor: sponsor }
+
     h3 ORGANIZAÇÃO
+    - @organizations.each_slice(4) do |group|
+      .collection
+        - for sponsor in group
+          = render 'sponsors/sponsor', { sponsor: sponsor }
+
     h3 APOIO
+    - @supports.each_slice(4) do |group|
+      .collection
+        - for sponsor in group
+          = render 'sponsors/sponsor', { sponsor: sponsor }
+
