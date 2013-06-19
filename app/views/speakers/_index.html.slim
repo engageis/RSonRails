@@ -1,0 +1,17 @@
+.speakers
+  .container
+    h1 GUEST SPEAKERS
+
+    - @speakers.each_slice(4) do |speakers_group|
+      .collection
+        - for speaker in speakers_group
+          .speaker
+            .avatar
+              = image_tag speaker.avatar.thumb.url
+            h2 = speaker.name
+            p = speaker.bio
+            .social
+              - if speaker.github_url.present?
+                = link_to speaker.github_url, speaker.github_url, class: 'github-icon', target: 'blank'
+              - if speaker.twitter_url.present?
+                = link_to speaker.twitter_url, speaker.twitter_url, class: 'twitter-icon', target: 'blank'

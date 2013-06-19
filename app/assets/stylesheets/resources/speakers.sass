@@ -4,3 +4,46 @@
   border-top: 2px solid $border
   h1
     text-align: center
+
+  .collection
+    +makeRow()
+    margin-top: 50px
+    .speaker
+      +makeColumn(3)
+      text-align: center
+
+      .avatar
+        img
+          border-radius: 50%
+          -webkit-border-radius: 50%
+          -moz-border-radius: 50%
+
+      h2
+        font-size: 18px
+        font-family: $font-normal
+        text-transform: uppercase
+        color: #1A1A1A
+
+      p
+        color: $color-silver
+
+
+
+  a.github-icon, a.twitter-icon
+    display: inline-block
+    margin: 5px
+    width: 30px
+    height: 25px
+    text-indent: -9999em
+    background: image-url('sprite_social.png') -30px 0 no-repeat
+    background-color: #EEEEEE
+    border: 5px solid #EEEEEE
+  a.twitter-icon
+    background: image-url('sprite_social.png') 4px no-repeat
+    background-color: #EEEEEE
+
+  a.github-icon, a.twitter-icon
+    &:hover
+      background-color: #CCCCCC
+      border: 5px solid #CCCCCC
+
