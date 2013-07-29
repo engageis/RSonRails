@@ -1,4 +1,17 @@
 GIT
+  remote: git://github.com/josemarluedke/newconference.git
+  revision: 945384167663963057054049fbd7fd23c5408aed
+  specs:
+    newconference (0.0.1.beta)
+      newconference-core (= 0.0.1.beta)
+    newconference-core (0.0.1.beta)
+      carrierwave (~> 0.8.0)
+      foreigner
+      pg
+      rails (~> 4.0.0)
+      rmagick
+
+GIT
   remote: git://github.com/sferik/rails_admin.git
   revision: 53ef7139d3bab8d05361bf28530c86d92989182f
   branch: rails-4
@@ -18,18 +31,6 @@ GIT
       remotipart (~> 1.0)
       safe_yaml (~> 0.6)
       sass-rails (~> 4.0.0.beta1)
-
-PATH
-  remote: ../newconference
-  specs:
-    newconference (0.0.1.beta)
-      newconference-core (= 0.0.1.beta)
-    newconference-core (0.0.1.beta)
-      carrierwave (~> 0.8.0)
-      foreigner
-      pg
-      rails (~> 4.0.0)
-      rmagick
 
 GEM
   remote: https://rubygems.org/
