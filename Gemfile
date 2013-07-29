@@ -20,7 +20,7 @@ gem 'cancan'
 gem 'jquery-rails'
 gem 'slim-rails'
 gem 'flutie'
-#gem 'rack-google-analytics'
+gem 'rack-google-analytics'
 
 # Assets
 gem 'sass-rails', '4.0.0'

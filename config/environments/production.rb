@@ -1,4 +1,7 @@
 Rsonrails::Application.configure do
+  # Google Analytics
+  config.middleware.use Rack::GoogleAnalytics, tracker: 'UA-42767038-1'
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
