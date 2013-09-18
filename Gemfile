@@ -33,6 +33,7 @@ gem 'newconference', github: 'josemarluedke/newconference'
 
 group :production do
   gem 'rails_on_heroku'
+  gem 'newrelic_rpm'
 end
 
 group :development, :test do
