@@ -1,9 +1,14 @@
 .schedules
   .container
     h1 PROGRAMAÇÃO
-    p.wait Aguarde... Ainda não temos a programação completa.
 
-    .enroll
-      h1
-        = link_to 'Call for papers', 'http://call4paperz.com/events/rs-on-rails-2013', target: 'blank'
+    .list
+      - for day in Newconference::Schedule.days
+        h1 = l day
+        - for hour in Newconference::Schedule.hours(day)
+          h2 = l hour
+          - for room in Newconference::Room.all
+            h3 = room.name
+            - for schedule in room.schedules.by_day day
+              = schedule
 
