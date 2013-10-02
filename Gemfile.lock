@@ -1,18 +1,4 @@
 GIT
-  remote: git://github.com/josemarluedke/newconference.git
-  revision: 8b071a5b223a645809465ccf441241f6607ae940
-  specs:
-    newconference (0.0.1.beta)
-      newconference-core (= 0.0.1.beta)
-    newconference-core (0.0.1.beta)
-      carrierwave (~> 0.8.0)
-      fog
-      foreigner
-      pg
-      rails (~> 4.0.0)
-      rmagick
-
-GIT
   remote: git://github.com/sferik/rails_admin.git
   revision: 53ef7139d3bab8d05361bf28530c86d92989182f
   branch: rails-4
@@ -32,6 +18,19 @@ GIT
       remotipart (~> 1.0)
       safe_yaml (~> 0.6)
       sass-rails (~> 4.0.0.beta1)
+
+PATH
+  remote: ../newconference
+  specs:
+    newconference (0.0.1.beta)
+      newconference-core (= 0.0.1.beta)
+    newconference-core (0.0.1.beta)
+      carrierwave (~> 0.8.0)
+      fog
+      foreigner
+      pg
+      rails (~> 4.0.0)
+      rmagick
 
 GEM
   remote: https://rubygems.org/
@@ -91,6 +90,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       warden (~> 1.2.1)
+    devise-i18n (0.9.0)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     eventmachine (1.0.3)
@@ -98,7 +98,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     flutie (2.0.0)
-    fog (1.14.0)
+    fog (1.15.0)
       builder
       excon (~> 0.25.0)
       formatador (~> 0.2.0)
@@ -140,7 +140,7 @@ GEM
     nested_form (0.3.2)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.6.8)
+    net-ssh (2.7.0)
     newrelic_rpm (3.6.6.147)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
@@ -170,6 +170,7 @@ GEM
       sprockets-rails (~> 2.0.0)
     rails-i18n (0.7.3)
       i18n (~> 0.5)
+    rails_admin-i18n (0.0.9)
     rails_on_heroku (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
@@ -250,6 +251,7 @@ DEPENDENCIES
   capybara
   coffee-rails (= 4.0.0)
   devise (~> 3.0.0.rc)
+  devise-i18n
   flutie
   font-awesome-sass-rails
   jquery-rails
@@ -262,6 +264,7 @@ DEPENDENCIES
   rails (= 4.0.0)
   rails-i18n
   rails_admin!
+  rails_admin-i18n
   rails_on_heroku
   rspec-rails
   sass-rails (= 4.0.0)
