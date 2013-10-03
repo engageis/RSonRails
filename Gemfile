@@ -15,7 +15,7 @@ gem 'rails-i18n'
 gem 'devise', '~> 3.0.0.rc'
 gem 'devise-i18n'
 gem 'font-awesome-sass-rails' # rails_admin dependence
-gem 'rails_admin', github: 'sferik/rails_admin', branch: 'rails-4'
+gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rails_admin-i18n'
 gem 'cancan'
 
@@ -31,8 +31,7 @@ gem 'coffee-rails', '4.0.0'
 gem 'uglifier'
 gem 'bootstrap-sass'
 
-# gem 'newconference', github: 'josemarluedke/newconference'
-gem 'newconference', path: '../newconference'
+gem 'newconference', github: 'josemarluedke/newconference'
 
 group :production do
   gem 'rails_on_heroku'
