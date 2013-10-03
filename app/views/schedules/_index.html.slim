@@ -6,7 +6,7 @@
       .day-frame
         - for hour in Newconference::Schedule.all_days_by_date(day)
           .schedule-frame
-            - for schedule in Newconference::Schedule.by_hour(hour)
+            - for schedule in Newconference::Schedule.by_hour(hour).order('room_id')
               .schedule-hour-frame
                 .schedule-frame-content-left
                   .schedule-hour
