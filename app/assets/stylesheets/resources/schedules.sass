@@ -11,29 +11,47 @@
 
 .day-frame
   width: 100%
+  height: 100%
   text-align: center
   margin-bottom: 50px
 
-.schedule-frame
-  position: relative
-  padding-top: 10px
-  margin-top: 50px
+.schedule-hour-frame
   width: 47%
+  float: left
+  border-left: 2px solid rgb(174, 39, 39)
+  margin-left: 20px
+  &:before
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    background: image-url('point.png')
+    position: relative
+    top: 70px
+    left: -10px
+
+.schedule-frame
+  display: flex
+  display: -webkit-flex
+  display: -moz-flex
   min-height: 80px
   margin-right: 15px
-  border-left: 2px solid rgb(174, 39, 39)
 
 .schedule-frame-content-left
-  position: absolute
+  padding-top: 50px
   width: 20%
+  float: left
+  img
+    border-radius: 50%
+    width: 80px
+    height: 80px
 
 .schedule-frame-content-right
-  margin-left: 21%
+  padding-top: 50px
+  float: right
   width: 79%
 
 .schedule-hour
-  display: inline-block
-  position: relative
   width: 99%
   p
     font-weight: bold
@@ -41,8 +59,6 @@
     font-size: 20px
 
 .schedule-title
-  display: inline-block
-  position: relative
   width: 99%
   text-align: left
   p
@@ -50,26 +66,18 @@
     font-size: 22px
 
 .schedule-room
-  display: inline-block
-  position: relative
   width: 99%
   font-size: 18px
 
 .schedule-description
-  display: inline-blockn
-  position: relative
   width: 99%
   text-align: justify
   color: #999
 
 .schedule-speaker-thumb
-  display: inline-block
-  position: relative
   width: 99%
 
 .schedule-speaker
-  display: inline-block
-  position: relative
   width: 99%
   text-align: left
   p

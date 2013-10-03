@@ -1,31 +1,32 @@
 .schedules
   .container
     h1 PROGRAMAÇÃO
-    br
-    br
-    br
 
     - for day in Newconference::Schedule.all_days
       .day-frame
-        h1 = l(day, format: "%d %B")
         - for hour in Newconference::Schedule.all_days_by_date(day)
           .schedule-frame
             - for schedule in Newconference::Schedule.by_hour(hour)
-              .schedule-frame-content-left
-                .schedule-hour
-                  p = l(hour, format: "%H:%m")
-                .schedule-room
-                  p = schedule.room.name
-                .schedule-speaker-thumb
-                  .avatar
-                    = image_tag schedule.keynote.speaker.avatar.thumb.url unless schedule.keynote.nil?
+              .schedule-hour-frame
+                .schedule-frame-content-left
+                  .schedule-hour
+                    p = l(hour, format: "%H:%m")
+                  .schedule-room
+                    p = schedule.room.name
+                  .schedule-speaker-thumb
+                    .avatar
+                      = image_tag schedule.keynote.speaker.avatar.thumb.url unless schedule.keynote.nil?
 
-              .schedule-frame-content-right
-                .schedule-title
-                  p = schedule.title
-                .schedule-speaker
-                  p = schedule.keynote.speaker.name unless schedule.keynote.nil?
-                .schedule-description
-                  p = schedule.keynote.description unless schedule.keynote.nil?
+                .schedule-frame-content-right
+                  .schedule-title
+                    - if schedule.keynote.present?
+                      p = schedule.keynote.title
+                    - else
+                      p = schedule.title
+                  .schedule-speaker
+                    p = schedule.keynote.speaker.name unless schedule.keynote.nil?
+                  .schedule-description
+                    p = schedule.keynote.description unless schedule.keynote.nil?
+            .clearfix
 
 
