@@ -13,8 +13,10 @@ gem 'thin'
 gem 'rails-i18n'
 
 gem 'devise', '~> 3.0.0.rc'
+gem 'devise-i18n'
 gem 'font-awesome-sass-rails' # rails_admin dependence
-gem 'rails_admin', github: 'sferik/rails_admin', branch: 'rails-4'
+gem 'rails_admin', github: 'sferik/rails_admin'
+gem 'rails_admin-i18n'
 gem 'cancan'
 
 # Frontend stuff
