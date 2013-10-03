@@ -1,6 +1,4 @@
 GIT
-<<<<<<< HEAD
-=======
   remote: git://github.com/josemarluedke/newconference.git
   revision: b2bfdb387f108bd305fdbf1fdc4478bfec368106
   specs:
@@ -15,7 +13,6 @@ GIT
       rmagick
 
 GIT
->>>>>>> 6549eec... Changed back to new conference gem on ruby gems
   remote: git://github.com/sferik/rails_admin.git
   revision: 31619ed36e32a883c24d6821b3a381459ced58a2
   specs:
@@ -34,19 +31,6 @@ GIT
       remotipart (~> 1.0)
       safe_yaml (~> 0.9)
       sass-rails (~> 4.0)
-
-PATH
-  remote: ../newconference
-  specs:
-    newconference (0.0.1.beta)
-      newconference-core (= 0.0.1.beta)
-    newconference-core (0.0.1.beta)
-      carrierwave (~> 0.8.0)
-      fog
-      foreigner
-      pg
-      rails (~> 4.0.0)
-      rmagick
 
 GEM
   remote: https://rubygems.org/
